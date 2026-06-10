@@ -749,5 +749,35 @@ input, select, textarea { font-family: inherit; }
   .categories__grid { grid-template-columns: 1fr; }
   .cat-card__circle { width: 140px; height: 140px; }
   .team__grid { grid-template-columns: 1fr; }
-  .procedures__col--left, .procedures__col--right { gap: 20px; }
+  
+  /* Procedimentos Mobile */
+  .procedures__layout { 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80vw;
+    margin: 0 auto;
+    min-height: auto;
+  }
+  .procedures__col--left, .procedures__col--right { 
+    padding: 0;
+  }
+  .procedures__col {
+    display: contents;
+  }
+  .proc-item { 
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 16px;
+    align-items: center;
+    text-align: left;
+  }
+  .proc-item:nth-child(even) {
+    grid-template-columns: 1fr 80px;
+    text-align: right;
+  }
+  .proc-item:nth-child(even) .proc-item__icon {
+    order: 2;
+  }
+  .proc-item span { font-size: 0.7rem; }
 }
