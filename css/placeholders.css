@@ -1,0 +1,52 @@
+/*
+  Estilos de placeholder visual para quando as imagens reais ainda não foram adicionadas.
+  Remova este arquivo quando todas as imagens estiverem no lugar.
+*/
+
+/* Hero doctor placeholder */
+.hero__image-frame {
+  background: linear-gradient(160deg, #e8d5cf 0%, #c9a497 60%, #b08070 100%);
+}
+.hero__image-frame img {
+  mix-blend-mode: multiply;
+}
+
+/* About image placeholders */
+.about__img-main {
+  background: linear-gradient(135deg, #f0e0db 0%, #d4b5ae 100%);
+}
+.about__img-secondary {
+  background: linear-gradient(135deg, #fdf0ec 0%, #e8cfc9 100%);
+}
+
+/* Differentials image placeholder */
+.differentials__image {
+  background: linear-gradient(160deg, rgba(201,164,151,.2) 0%, rgba(45,40,38,.6) 100%);
+}
+
+/* Service card image placeholders */
+.service-card__img {
+  background: linear-gradient(135deg, #fdf8f5 0%, #ecddd8 100%);
+  position: relative;
+}
+.service-card__img::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #f5ede9 0%, #dcc4be 100%);
+}
+.service-card:nth-child(2) .service-card__img::after { background: linear-gradient(135deg, #fdf0ec 0%, #c4a8a0 100%); }
+.service-card:nth-child(3) .service-card__img::after { background: linear-gradient(135deg, #f9f0ee 0%, #d8b8b0 100%); }
+.service-card:nth-child(4) .service-card__img::after { background: linear-gradient(135deg, #fdf8f5 0%, #e2cec8 100%); }
+.service-card:nth-child(5) .service-card__img::after { background: linear-gradient(135deg, #f5f0ee 0%, #c9b0aa 100%); }
+.service-card:nth-child(6) .service-card__img::after { background: linear-gradient(135deg, #fdf4f2 0%, #d4b8b4 100%); }
+
+/* Gallery placeholders */
+.gallery__item {
+  background: linear-gradient(135deg, #f5ede9 0%, #dcc4be 100%);
+}
+.gallery__item:nth-child(2) { background: linear-gradient(135deg, #fdf0ec 0%, #c4a8a0 100%); }
+.gallery__item:nth-child(3) { background: linear-gradient(135deg, #f9f0ee 0%, #d8b8b0 100%); }
+.gallery__item:nth-child(4) { background: linear-gradient(135deg, #fdf8f5 0%, #e2cec8 100%); }
+.gallery__item:nth-child(5) { background: linear-gradient(135deg, #f5f0ee 0%, #c9b0aa 100%); }
+.gallery__item:nth-child(6) { background: linear-gradient(135deg, #fdf4f2 0%, #d4b8b4 100%); }
