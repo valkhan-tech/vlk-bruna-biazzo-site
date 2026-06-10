@@ -189,8 +189,8 @@ input, select, textarea { font-family: inherit; }
 
 .hero__title {
   font-family: var(--font-serif);
-  font-size: clamp(2.6rem, 5.5vw, 4.8rem);
-  font-weight: 400; line-height: 1.08;
+  font-size: clamp(2rem, 3.6vw, 3.2rem);
+  font-weight: 400; line-height: 1.18;
   color: var(--white); margin-bottom: 20px;
 }
 .hero__title em { font-style: italic; color: rgba(255,220,210,.9); }
@@ -712,7 +712,7 @@ input, select, textarea { font-family: inherit; }
 
   /* Hero */
   .hero__slider { height: 88vh; min-height: 480px; }
-  .hero__title { font-size: 2.4rem; }
+  .hero__title { font-size: 2rem; }
   .hero__arrow--next { right: 60px; }
   .hero__slide-nav { right: 16px; }
 
@@ -745,7 +745,7 @@ input, select, textarea { font-family: inherit; }
 }
 
 @media (max-width: 480px) {
-  .hero__title { font-size: 2rem; }
+  .hero__title { font-size: 1.7rem; }
   .categories__grid { grid-template-columns: 1fr; }
   .cat-card__circle { width: 140px; height: 140px; }
   .team__grid { grid-template-columns: 1fr; }
